@@ -63,32 +63,52 @@ header .nav-2{
 
 }
 
-header .nav-2 ul{
-    display: flex;
+
+.nav-links  ul li{
+    display: inline-block;
+   
+}
+
+
+header .nav-2 ul li{
+
     list-style: none;
    position: relative;
+
+
    
 
 }
 
 @media(max-width:767px){
-    header  .nav-2 ul{
+    header .nav-links .nav-2 ul li{
         display: block;
-        background-color:#fff;
-        position: absolute;
-        width: 400px;
-        height: fit-content;
-        top: 50;
-        right: 0;
-        z-index: 99;
-       margin-top: 120px;
-       text-align: center;
        
     }
 
-    .nav-2 .fab{
+    header .nav-links 
+    {
+        background-color:#fff;
+        position: absolute;
+        width: 400px;
+        height: 100vh;
+        top: 0;
+        right: -400px;
+        z-index: 99;
+       margin-top: 120px;
+       text-align: center;
+    }
+
+    .nav-2 .nav-links .fab,  .nav-links .fas{
         color: #f24;
         display: block;
+        font-size: 1rem;
+        text-align: right;
+        position: absolute;
+        z-index: 100;
+        right: 0;
+        padding-right: 20px;
+        font-size: 1.5rem;
     }
     
 }
@@ -128,6 +148,14 @@ header .nav-2 img{
     width: 80px;
     height: 80px;
     border-radius: 8px;
+}
+
+@media(max-width:767px){
+    header .nav-2 img{
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+    }
 }
 header .nav-2 img:hover{
     transform: scale(1.2);
@@ -177,7 +205,7 @@ header .nav-2 img:hover{
     transform: rotate(180deg);
 }
 
-.nav-2 .fab, .nav-2 .fas{
+.nav-links .fab, .nav-links .fas{
     display: none;
 }
 
@@ -187,7 +215,7 @@ header .nav-2 img:hover{
 
 .below-header-1{
     background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
-    url(/images/treatement3.jpg);
+    url(images/treatement3.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -197,6 +225,13 @@ header .nav-2 img:hover{
 .below-header-text{
     padding-top: 250px;
     padding-left: 70px;
+}
+
+@media (max-width: 767px){
+    .below-header-text{
+        
+        padding-left: 5px;
+    }
 }
 
 
@@ -238,7 +273,13 @@ header .nav-2 img:hover{
     font-size: 1.25rem;
     color: #fff;
     cursor: pointer;
-    text-decoration: none;
+}
+
+@media(max-width:767px){
+    .banner-btn{
+        padding:10px 10px ;
+       
+    }
 }
 
 .banner-btn:hover{

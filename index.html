@@ -26,29 +26,32 @@
           <li><a href="">Giving</a></li>
         </ul>
       </nav>
-      <nav class="nav-2">
-        <img src="/images/logo.PNG" alt="" id="logo" />
-
-        <ul>
-          <i class="fab fa-xing-square"></i>
-          <li><a href="">Home</a></li>
-          <li><a href="">Doctors</a></li>
-          <li><a href="">Patients & Visitors</a></li>
-          <div class="dropdown">
-            <li>
-              <a href="">Services <i class="fas fa-chevron-up"></i></a>
-            </li>
-            <div class="sub-menu-1">
-              <ul>
-                <li><a href="">Medical </a></li>
-                <li><a href="">Pharmaceutical</a></li>
-                <li><a href="">Ambulance </a></li>
-              </ul>
+      <div class="nav-2">
+        <img src="images/logo.PNG" alt="" id="logo" />
+        <div class="nav-links" id="mobile-menu">
+          <i class="fab fa-xing-square" onclick="closeMobileMenu()"></i>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Doctors</a></li>
+            <li><a href="">Patients & Visitors</a></li>
+            <div class="dropdown">
+              <li>
+                <a href=""
+                  >Services <i class="fas fa-chevron-up chevron"></i
+                ></a>
+              </li>
+              <div class="sub-menu-1">
+                <ul>
+                  <li><a href="">Medical </a></li>
+                  <li><a href="">Pharmaceutical</a></li>
+                  <li><a href="">Ambulance </a></li>
+                </ul>
+              </div>
             </div>
-          </div>
-        </ul>
-      </nav>
-      <i class="fas fa-bars"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openMobileMenu()"></i>
+        </div>
+      </div>
     </header>
     <section class="below-header-1">
       <div class="below-header-text">
@@ -85,6 +88,7 @@
             everyday health concerns with Rush On Demand. We have many
             convenient ways to see a provider, including online virtual visits.
           </p>
+
           <a href="#">Get Care Today</a>
         </div>
       </div>
