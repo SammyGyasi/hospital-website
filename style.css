@@ -31,6 +31,14 @@ header .nav-1 ul{
     margin: auto;
 }
 
+@media (max-width: 767px) {
+    header .nav-1 ul{
+        
+        width: 100%;
+        margin: 0; 
+}}
+
+
 header .nav-1 ul a{
     color: #fff;
     padding: 8px;
@@ -68,7 +76,7 @@ header .nav-2 ul{
         display: block;
         background-color:#fff;
         position: absolute;
-        width: 767px;
+        width: 400px;
         height: fit-content;
         top: 50;
         right: 0;
@@ -80,8 +88,6 @@ header .nav-2 ul{
 
     .nav-2 .fab{
         color: #f24;
-        padding: 20px;
-        text-align: right;
         display: block;
     }
     
@@ -106,6 +112,12 @@ header .nav-2 ul li a::after{
     margin-left: 8px;
     transition: 0.5s;
 
+}
+
+@media(max-width:767px){
+    header .nav-2 ul li a::after{
+        display: none;
+    }  
 }
 
 header .nav-2 ul li a:hover::after{
@@ -210,6 +222,13 @@ header .nav-2 img:hover{
     .below-header-text h1{
         font-size: 2.2rem;
     }
+
+    .below-header-text h5{
+        font-size: 1rem;
+        color: #fff;
+        
+    }
+    
 }
 
 .banner-btn{
